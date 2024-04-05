@@ -1,5 +1,4 @@
 import React from "react";
-import banner1 from "../../../../../N3 6-oy/gipermart/src/assets/images/banner1.jpg";
 import Slider from "react-slick";
 import { Button } from "../../../Components/Buttons/Button";
 const Banner = () => {
@@ -12,7 +11,7 @@ const Banner = () => {
     autoplaySpeed: 4000,
     cssEase: "linear",
     swipeToSlide: true,
-    // autoplay: true,
+    autoplay: true,
     arrows: false,
   };
   return (
