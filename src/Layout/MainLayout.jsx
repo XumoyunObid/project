@@ -7,6 +7,9 @@ import Contact from "../Pages/Home/Contact/Contact";
 const MainLayout = () => {
   return (
     <div>
+      <div className="bg-black flex items-center justify-center py-2">
+        <h1 className="text-white">Free Shipping</h1>
+      </div>
       <header>
         <Header />
       </header>

@@ -1,41 +1,85 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Bar from "./Components/Bar";
+import logo from "../../../public/giftc.avif";
+import Search from "./Components/Search";
 
 const Header = () => {
-  const [show, setShow] = useState();
+  const [show, setShow] = useState(false);
+  let [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    // Close the bar when the location changes
+    setShow(false);
+    enableBodyScroll(); // Enable scrolling when the bar is closed
+  }, [location]);
 
   const handleShow = () => {
     setShow(!show);
+    if (!show) {
+      disableBodyScroll(); // Disable scrolling when the bar is open
+    } else {
+      enableBodyScroll(); // Enable scrolling when the bar is closed
+    }
   };
+
+  const handleToHome = () => {
+    navigate("/");
+    setShow(false); // Close the bar after navigation
+    enableBodyScroll(); // Enable scrolling when the bar is closed
+  };
+
+  const handleToProducts = () => {
+    navigate("/all-products");
+    setShow(false); // Close the bar after navigation
+    enableBodyScroll(); // Enable scrolling when the bar is closed
+  };
+
+  const handleToContact = () => {
+    navigate("/contacts");
+    setShow(false); // Close the bar after navigation
+    enableBodyScroll(); // Enable scrolling when the bar is closed
+  };
+
+  const disableBodyScroll = () => {
+    document.body.style.overflow = "hidden";
+  };
+
+  const enableBodyScroll = () => {
+    document.body.style.overflow = "";
+  };
+
   return (
     <div>
       <div className="container flex items-center justify-between py-5">
-        <button onClick={handleShow} className="md:hidden">
+        <button onClick={handleShow} className="md:hidden w-5">
           {!show ? (
             <i className="fa-solid fa-bars text-2xl"></i>
           ) : (
             <i className="fa-solid fa-xmark text-2xl"></i>
           )}
         </button>
-        <h1 className="text-2xl">
-          <Link to="/">LOGO</Link>
-        </h1>
-        <ul className="md:flex items-center gap-6 hidden">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="all-products">All Products</Link>
-          </li>
-          <li>
-            <Link to="/contacts">Contact</Link>
-          </li>
-        </ul>
+        <div className="flex items-center gap-6">
+          <Link to="/">
+            <img className="w-[120px]" src={logo} alt="" />
+          </Link>
+          <ul className="md:flex items-center gap-6 hidden">
+            <li className="hover:underline">
+              <button onClick={handleToHome}>Home</button>
+            </li>
+            <li className="hover:underline">
+              <button onClick={handleToProducts}>All Products</button>
+            </li>
+            <li className="hover:underline">
+              <button onClick={handleToContact}>Contact</button>
+            </li>
+          </ul>
+        </div>
+        <Search setIsOpen={setIsOpen} isOpen={isOpen} />
       </div>
-      <div className="container md:hidden">
-        <Bar show={show} />
-      </div>
+      <div className="container md:hidden">{show && <Bar show={show} />}</div>
     </div>
   );
 };
