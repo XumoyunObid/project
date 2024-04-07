@@ -3,20 +3,20 @@ import { Button } from "../../Components/Buttons/Button";
 
 const Contacts = () => {
   return (
-    <div className="container px-[150px]">
-      <h1 className="text-[48px]">Contact</h1>
+    <div className="container md:px-[80px]">
+      <h1 className="text-[36px] md:text-[48px]">Contact</h1>
       <div className="flex flex-col gap-2 my-8">
-        <p className="text-gray-500">住所：東京都渋谷区大山町1-19</p>
-        <p className="text-gray-500">開館時間：10:00~19:00</p>
-        <p className="text-gray-500">定休日：なし</p>
-        <p className="text-gray-500">クレジットカードの有無と種類：有り</p>
-        <p className="text-gray-500">
+        <p className="text-gray-500 text-base">住所：東京都渋谷区大山町1-19</p>
+        <p className="text-gray-500 text-base">開館時間：10:00~19:00</p>
+        <p className="text-gray-500 text-base">定休日：なし</p>
+        <p className="text-gray-500 text-base">クレジットカードの有無と種類：有り</p>
+        <p className="text-gray-500 text-base">
           言語対応レベル：日本語、トルコ語、英語、
         </p>
-        <p className="text-gray-500">最寄り駅：代々木上原駅</p>
-        <p className="text-gray-500">アクセス：代々木上原駅から徒歩5分</p>
-        <p className="text-gray-500">電話番号：03-5790-0760</p>
-        <p className="text-gray-500">
+        <p className="text-gray-500 text-base">最寄り駅：代々木上原駅</p>
+        <p className="text-gray-500 text-base">アクセス：代々木上原駅から徒歩5分</p>
+        <p className="text-gray-500 text-base">電話番号：03-5790-0760</p>
+        <p className="text-gray-500 text-base">
           東京ジャーミー　ハラールマーケットは新文化センターの一階です。
         </p>
       </div>

@@ -44,8 +44,8 @@ export default function Search({ isOpen, setIsOpen }) {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full transform overflow-hidden bg-white p-6 flex items-center justify-center shadow-xl">
-                  <div className="flex items-center gap-6">
-                    <div className="border-2 border-gray-600 p-2 flex items-center justify-between min-w-[368px] lg:w-[740px]">
+                  <div className="flex items-center px-10 gap-6">
+                    <div className="border-2 border-gray-600 p-2 flex items-center justify-between min-w-[308px] lg:w-[740px]">
                       <input
                         className="outline-none w-full"
                         placeholder="Search"

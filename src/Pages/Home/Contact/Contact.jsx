@@ -7,7 +7,7 @@ const Contact = () => {
         Be the first to know about new collections and exclusive offers
       </h3>
       <div className="border-2 border-gray-600 p-4 flex items-center justify-between w-[360px]">
-        <input type="email" placeholder="Email" />
+        <input type="email" placeholder="Email" className="outline-none" />
         <i className="fa-solid fa-arrow-right text-gray-600"></i>
       </div>
     </div>

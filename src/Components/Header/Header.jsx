@@ -54,7 +54,7 @@ const Header = () => {
   return (
     <div>
       <div className="container flex items-center justify-between py-5">
-        <button onClick={handleShow} className="md:hidden w-5">
+        <button onClick={handleShow} className="lg:hidden w-5">
           {!show ? (
             <i className="fa-solid fa-bars text-2xl"></i>
           ) : (
@@ -65,7 +65,7 @@ const Header = () => {
           <Link to="/">
             <img className="w-[120px]" src={logo} alt="" />
           </Link>
-          <ul className="md:flex items-center gap-6 hidden">
+          <ul className="lg:flex items-center gap-6 hidden">
             <li className="hover:underline">
               <button onClick={handleToHome}>Home</button>
             </li>
@@ -79,7 +79,7 @@ const Header = () => {
         </div>
         <Search setIsOpen={setIsOpen} isOpen={isOpen} />
       </div>
-      <div className="container md:hidden">{show && <Bar show={show} />}</div>
+      <div className="container lg:hidden">{show && <Bar show={show} />}</div>
     </div>
   );
 };
