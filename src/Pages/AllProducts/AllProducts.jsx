@@ -10,9 +10,7 @@ const AllProducts = () => {
     <div className="container my-5">
       <h1 className="text-[36px] mb-10">Products</h1>
       <div className="flex items-center justify-between">
-        <button>
-          <i className="fa-solid fa-sliders"></i> Filter and sort
-        </button>
+        <div></div>
         <p className="text-sm text-gray-500">{data.length} products</p>
       </div>
       <ul className="grid grid-cols-2 lg:grid-cols-4 gap-2">

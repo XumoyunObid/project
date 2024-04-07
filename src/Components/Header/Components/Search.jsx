@@ -83,7 +83,7 @@ export default function Search({ isOpen, setIsOpen }) {
                       <div className="w-full flex items-center justify-center">
                         <div className="bg-white w-[350px] text-start border-b pt-5 p-3 lg:w-[740px] h-[300px] overflow-y-scroll">
                           <h1 className="text-sm text-gray-500">Products</h1>
-                          <ul>
+                          <ul className="flex flex-col">
                             {searchResults.map((item) => (
                               <button onClick={handleClose}>
                                 <Link to={`/product/${item.id}`} key={item.id}>
