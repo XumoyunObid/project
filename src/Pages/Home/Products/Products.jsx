@@ -3,6 +3,7 @@ import { data } from "../../../Datas/data";
 import { Link } from "react-router-dom";
 import MainCard from "../../../Components/Cards/MainCard";
 import useAutoScrollTop from "../../../Hooks/UseAutoScrollTop";
+import CardSkeleton from "../../../Components/Cards/CardSkeleton";
 
 const Products = () => {
   useAutoScrollTop();
@@ -18,7 +19,7 @@ const Products = () => {
             data-aos-duration="1500"
           >
             <Link to={`/product/${item.id}`}>
-              <MainCard {...item} />
+              {data ? <MainCard {...item} /> : <CardSkeleton />}
             </Link>
           </li>
         ))}

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import MainCard from "../../Components/Cards/MainCard";
 import { data } from "../../Datas/data";
 import useAutoScrollTop from "../../Hooks/UseAutoScrollTop";
+import CardSkeleton from "../../Components/Cards/CardSkeleton";
 
 const AllProducts = () => {
   useAutoScrollTop();
@@ -23,7 +24,7 @@ const AllProducts = () => {
             data-aos-delay={`${item.id}00`}
           >
             <Link to={`/product/${item.id}`}>
-              <MainCard {...item} />
+              {data ? <MainCard {...item} /> : <CardSkeleton />}
             </Link>
           </li>
         ))}
