@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import MainCard from "../../Components/Cards/MainCard";
 import { data } from "../../Datas/data";
+import useAutoScrollTop from "../../Hooks/UseAutoScrollTop";
 
 const AllProducts = () => {
+  useAutoScrollTop();
   return (
     <div className="container my-5">
       <h1 className="text-[36px] mb-10">Products</h1>
