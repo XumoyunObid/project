@@ -28,7 +28,10 @@ const Footer = () => {
         <div className="md:w-1/2">
           <h2 className="text-gray-600 text-base">Quick links</h2>
           <div className="flex flex-col gap-3 py-4">
-            <Link to="https://tokyocamii.org" className="text-gray-500 text-sm hover:underline">
+            <Link
+              to="https://tokyocamii.org"
+              className="text-gray-500 text-sm hover:underline"
+            >
               Tokyo Camii official web page
             </Link>
             <Link
@@ -55,22 +58,26 @@ const Footer = () => {
         </div>
       </div>
       <div className="container py-10 flex items-center justify-center">
-        <div className="flex items-center gap-3">
-          <li className="list-none text-gray-500 text-[10px]">
-            <Link>© 2024, Tokyo Camii Gift</Link>
-          </li>
-          <li className=" text-gray-500 text-[10px]">
-            <Link>Refund policy</Link>
-          </li>
-          <li className=" text-gray-500 text-[10px]">
-            <Link>Privacy policy</Link>
-          </li>
-          <li className=" text-gray-500 text-[10px]">
-            <Link>Terms of service</Link>
-          </li>
-          <li className=" text-gray-500 text-[10px]">
-            <Link>Contact information</Link>
-          </li>
+        <div className="flex flex-col md:flex-row items-center gap-3">
+          <div className="flex items-center gap-3">
+            <li className="list-none text-gray-500 text-[10px]">
+              <Link>© 2024, Tokyo Camii Gift</Link>
+            </li>
+            <li className=" text-gray-500 text-[10px]">
+              <Link>Refund policy</Link>
+            </li>
+          </div>
+          <div className="flex items-center gap-3">
+            <li className=" text-gray-500 text-[10px]">
+              <Link>Privacy policy</Link>
+            </li>
+            <li className=" text-gray-500 text-[10px]">
+              <Link>Terms of service</Link>
+            </li>
+            <li className=" text-gray-500 text-[10px]">
+              <Link>Contact information</Link>
+            </li>
+          </div>
           <li className=" text-gray-500 text-[10px]">
             <Link>Legal notice</Link>
           </li>
