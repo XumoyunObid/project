@@ -2,7 +2,12 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="text-center flex flex-col gap-4 items-center justify-center mt-[100px] mb-[100px]">
+    <div
+      className="text-center flex flex-col gap-4 items-center justify-center mt-[100px] mb-[100px]"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
       <h3 className="text-base text-gray-600">
         Be the first to know about new collections and exclusive offers
       </h3>

@@ -11,8 +11,6 @@ export default function Search({ isOpen, setIsOpen }) {
     item.title.toLowerCase().includes(value.toLowerCase())
   );
 
-  console.log(searchResults);
-
   function closeModal() {
     setIsOpen(false);
   }
@@ -79,12 +77,12 @@ export default function Search({ isOpen, setIsOpen }) {
                     </div>
                     {searchResults.length ? (
                       <div className="w-full flex items-center justify-center">
-                        <div className="bg-white w-[350px] text-start border-b pt-5 p-3 lg:w-[740px] overflow-y-scroll">
+                        <div className="bg-white w-[350px] text-start border-b pt-5 p-3 lg:w-[740px] h-[300px] overflow-y-scroll">
                           <h1 className="text-sm text-gray-500">Products</h1>
                           <ul>
                             {searchResults.map((item) => (
                               <Link key={item.id}>
-                                <li className="flex items-center gap-3 py-2 hover:bg-gray-200">
+                                <li className="flex items-center gap-3 p-2 hover:bg-gray-200">
                                   <img
                                     src={item.img}
                                     alt="product"

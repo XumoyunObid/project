@@ -10,14 +10,16 @@ const MainLayout = () => {
       <div className="bg-black flex items-center justify-center py-2">
         <h1 className="text-white">Free Shipping</h1>
       </div>
-      <header>
+      <header className="border-b">
         <Header />
       </header>
       <main>
         <Outlet />
       </main>
       <Contact />
-      <footer className="border-t border-b">
+      <footer
+        className="border-t border-b"
+      >
         <Footer />
       </footer>
     </div>

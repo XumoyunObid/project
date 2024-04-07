@@ -9,8 +9,13 @@ const Products = () => {
       <h1 className="text-2xl container">All Products</h1>
       <ul className="grid grid-cols-2 lg:grid-cols-5 gap-5">
         {data?.map((item) => (
-          <li key={item.id}>
-            <Link>
+          <li
+            key={item.id}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+          >
+            <Link to={`/product/${item.id}`}>
               <MainCard {...item} />
             </Link>
           </li>

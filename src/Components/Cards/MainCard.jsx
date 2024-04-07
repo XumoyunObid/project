@@ -5,7 +5,11 @@ const MainCard = ({ title, img, price, discount }) => {
   return (
     <div className="h-[330px] md:h-[520px] bg-white w-full flex flex-col justify-between">
       <div className="flex items-center justify-center">
-        <img src={img} alt="img" className="h-[155px] md:h-[385px] object-contain" />
+        <img
+          src={img}
+          alt="img"
+          className="h-[155px] md:h-[385px] object-contain hover:scale-[1.05] duration-700"
+        />
       </div>
       <div>
         <h2 className="text-[12px]">{title}</h2>

@@ -5,7 +5,12 @@ const Footer = () => {
   return (
     <>
       <div className="container flex flex-col gap-4 md:flex-row md:justify-between py-5 border-b-2 w-full">
-        <div className="md:w-1/2">
+        <div
+          className="md:w-1/2"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
           <h2 className="text-gray-600 text-base">Contact</h2>
           <ul className="flex flex-col gap-2 py-4">
             <li className="text-gray-500 text-sm">
@@ -25,7 +30,12 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="md:w-1/2">
+        <div
+          className="md:w-1/2"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
           <h2 className="text-gray-600 text-base">Quick links</h2>
           <div className="flex flex-col gap-3 py-4">
             <Link
@@ -44,21 +54,26 @@ const Footer = () => {
               to="https://www.facebook.com/gift.tokyocamii/"
               className="text-gray-500 text-sm flex items-center gap-1 hover:underline"
             >
-              <i class="fa-brands fa-square-facebook text-2xl"></i> Tokyo Camii
-              Facebook
+              <i className="fa-brands fa-square-facebook text-2xl"></i> Tokyo
+              Camii Facebook
             </Link>
             <Link
               to="https://www.instagram.com/gift.tokyocamii/"
               className="text-gray-500 text-sm flex items-center gap-1 hover:underline"
             >
-              <i class="fa-brands fa-instagram text-2xl"></i> Tokyo Camii
+              <i className="fa-brands fa-instagram text-2xl"></i> Tokyo Camii
               Instagram
             </Link>
           </div>
         </div>
       </div>
       <div className="container py-10 flex items-center justify-center">
-        <div className="flex flex-col md:flex-row items-center gap-3">
+        <div
+          className="flex flex-col md:flex-row items-center gap-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+        >
           <div className="flex items-center gap-3">
             <li className="list-none text-gray-500 text-[10px]">
               <Link>© 2024, Tokyo Camii Gift</Link>

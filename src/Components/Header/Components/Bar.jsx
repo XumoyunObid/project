@@ -22,10 +22,10 @@ const Bar = ({ show }) => {
             </ul>
             <div className="flex items-center gap-4 p-8">
               <a href="https://www.facebook.com/gift.tokyocamii/">
-                <i class="fa-brands fa-square-facebook text-2xl"></i>
+                <i className="fa-brands fa-square-facebook text-2xl"></i>
               </a>
               <a href="https://www.instagram.com/gift.tokyocamii/">
-                <i class="fa-brands fa-instagram text-2xl"></i>
+                <i className="fa-brands fa-instagram text-2xl"></i>
               </a>
             </div>
           </div>
