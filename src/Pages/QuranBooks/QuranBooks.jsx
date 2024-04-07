@@ -7,9 +7,9 @@ import { kurans } from "../../Datas/data";
 const QuranBooks = () => {
   return (
     <div className="container my-5">
-      <h1 className="text-[36px] mb-10">イスラミクギフト・Islamic Gifts</h1>
+      <h1 className="text-[36px] mb-10">クラン『本』・Quran Books</h1>
       <h2 className="text-md md:text-[28px] text-gray-500 my-3">
-        Islamic Gifts from Tokyo Camii Gifts
+      Quran Books from Tokyo Camii Gifts
       </h2>
       <div className="flex items-center justify-between">
         <div></div>
