@@ -1,13 +1,30 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
+import { data } from "../../../Datas/data";
+import { Link } from "react-router-dom";
 
 export default function Search({ isOpen, setIsOpen }) {
+  const [value, setValue] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
+  const searchData = data.filter((item) =>
+    item.title.toLowerCase().includes(value.toLowerCase())
+  );
+
+  console.log(searchResults);
+
   function closeModal() {
     setIsOpen(false);
   }
 
   function openModal() {
     setIsOpen(true);
+  }
+
+  function handleInputChange(e) {
+    const inputValue = e.target.value;
+    setValue(inputValue);
+    setSearchResults(searchData);
   }
 
   return (
@@ -44,18 +61,47 @@ export default function Search({ isOpen, setIsOpen }) {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full transform overflow-hidden bg-white p-6 flex items-center justify-center shadow-xl">
-                  <div className="flex items-center px-10 gap-6">
-                    <div className="border-2 border-gray-600 p-2 flex items-center justify-between min-w-[308px] lg:w-[740px]">
-                      <input
-                        className="outline-none w-full"
-                        placeholder="Search"
-                        type="text"
-                      />
-                      <i className="fa-solid fa-magnifying-glass"></i>
+                  <div className="">
+                    <div className="flex items-center px-10 gap-6">
+                      <div className="border-2 border-gray-600 p-2 flex items-center justify-between min-w-[308px] lg:w-[740px]">
+                        <input
+                          className="outline-none w-full"
+                          placeholder="Search"
+                          type="text"
+                          value={value}
+                          onChange={handleInputChange}
+                        />
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <button type="button" className="" onClick={closeModal}>
+                        <i className="fa-solid fa-xmark text-[24px]"></i>
+                      </button>
                     </div>
-                    <button type="button" className="" onClick={closeModal}>
-                      <i className="fa-solid fa-xmark text-[24px]"></i>
-                    </button>
+                    {searchResults.length ? (
+                      <div className="w-full flex items-center justify-center">
+                        <div className="bg-white w-[350px] text-start border-b pt-5 p-3 lg:w-[740px] overflow-y-scroll">
+                          <h1 className="text-sm text-gray-500">Products</h1>
+                          <ul>
+                            {searchResults.map((item) => (
+                              <Link key={item.id}>
+                                <li className="flex items-center gap-3 py-2 hover:bg-gray-200">
+                                  <img
+                                    src={item.img}
+                                    alt="product"
+                                    className="w-[50px] object-contain"
+                                  />
+                                  <h2 className="text-sm hover:underline">
+                                    {item.title}
+                                  </h2>
+                                </li>
+                              </Link>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
