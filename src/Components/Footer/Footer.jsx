@@ -75,26 +75,25 @@ const Footer = () => {
           data-aos-duration="1500"
         >
           <div className="flex items-center gap-3">
-            <li className="list-none text-gray-500 text-[10px]">
-              <Link>© 2024, Tokyo Camii Gift</Link>
+            <li className="list-none text-gray-500 text-[10px] hover:underline">
+              <Link to="/">© 2024, Tokyo Camii Gift</Link>
             </li>
-            <li className=" text-gray-500 text-[10px]">
-              <Link>Refund policy</Link>
+            <li className=" text-gray-500 text-[10px] hover:underline">
+              <Link to="/policies/refund-policy">Refund policy</Link>
             </li>
           </div>
           <div className="flex items-center gap-3">
-            <li className=" text-gray-500 text-[10px]">
-              <Link>Privacy policy</Link>
+            <li className=" text-gray-500 text-[10px] hover:underline">
+              <Link to="/policies/terms-of-service">Terms of service</Link>
             </li>
-            <li className=" text-gray-500 text-[10px]">
-              <Link>Terms of service</Link>
-            </li>
-            <li className=" text-gray-500 text-[10px]">
-              <Link>Contact information</Link>
+            <li className=" text-gray-500 text-[10px] hover:underline">
+              <Link to="/policies/contact-information">
+                Contact information
+              </Link>
             </li>
           </div>
-          <li className=" text-gray-500 text-[10px]">
-            <Link>Legal notice</Link>
+          <li className=" text-gray-500 text-[10px] hover:underline">
+            <Link to="/policies/legal-notice">Legal notice</Link>
           </li>
         </div>
       </div>

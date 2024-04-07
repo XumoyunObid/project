@@ -143,3 +143,106 @@ export const data = [
       "Easy to care, foldable paper prayer mat (pocket size). 運びやすい、コンパクト、ポケットサイズの紙礼拝マット。",
   },
 ];
+
+export const kurans = [
+  {
+    id: 2,
+    img: img2,
+    title:
+      "Japanese Translation of The Holy Quran 聖クルアーン（日本語対訳付き）",
+    price: "2,700",
+    discount: "3,000",
+    description:
+      "This Japanese Translation of The Holy Quran 聖クルアーン（日本語対訳付き）offers a comprehensive translation of the Quran in a professional and easily comprehensible format. Reading the Japanese translation provides insight into the meaning and context of the original Arabic text.",
+  },
+  {
+    id: 1,
+    img: img1,
+    title: "Beautiful Names of Allah Book Set 1-20 アッラーの名前 セット 1-20",
+    price: "1,480",
+    discount: "1,500",
+    description:
+      "This Beautiful Names of Allah Book Set encourages children's spiritual growth. Each book contains comprehensive information on the 99 names of Allah — a great way to foster a child's connection with their faith.",
+  },
+  {
+    id: 8,
+    img: img8,
+    title: "Quran Kareem with Artificial Leather Cover コーランカリーム",
+    price: "2,400",
+    description:
+      " Medium Size Quran Kareem Thermo Leather Cover. 中型コーラン カリームサーモレザーカバー ",
+  },
+  {
+    id: 9,
+    img: img9,
+    title: "Quran Kareem コーランカリーム",
+    price: "2,700",
+    discount: "3,950",
+    description:
+      "The actual colors and patterns may differ from those shown in the photos. Thank you for your understandings in advance. For bulk buying, please contact the following address. tchalalmarket@gmail.com 実物の色や柄は写真と異なる場合があります。予めご了承下さい。多量注文をご希望の場合は以下のメールアドレスにご連絡下さい。 tchalalmarket@gmail.com",
+  },
+  {
+    id: 10,
+    img: img10,
+    title: "Quran Kareem コーランカリーム",
+    price: "3,950",
+    description:
+      "The actual colors and patterns may differ from those shown in the photos. Thank you for your understandings in advance. For bulk buying, please contact the following address. tchalalmarket@gmail.com  実物の色や柄は写真と異なる場合があります。予めご了承下さい。多量注文をご希望の場合は以下のメールアドレスにご連絡下さい。 tchalalmarket@gmail.com ",
+  },
+];
+
+export const mats = [
+  {
+    id: 4,
+    img: img4,
+    title: "Luxurious Velvet Prayer Rug - 礼拝用敷物（ラメ入り高級ベルベット）",
+    price: "4,990",
+    discount: "19,500",
+    description:
+      "Muslims are often seen kneeling and prostrating on small embroidered rugs, called prayer rugs. For those unfamiliar with the use of these rugs, they may look like small oriental carpets, or simply nice pieces of embroidery. During Islamic prayers, worshippers bow, kneel and prostrate on the ground in humility before God. The only requirement in Islam is that prayers be performed in an area that is clean. Plush Lux PraPlush Lux Prayer Mats, Turkish Luxury Prayer Rug. イスラム教徒は、祈りの敷物 と呼ばれる刺繍入りの小さな敷物の上で、膝をついたり、ひれ伏したりする姿をよく目にします。この敷物の使い方を知らない人にとっては、小さな「オリエンタルカーペット」のように見えるかもしれませんし、単に素敵な刺繍の作品に見えるかもしれません。イスラム教の礼拝では、礼拝者は神の前に謙虚に頭を下げたり、ひざまずいたり、地面にひれ伏したりします。イスラム教では、礼拝は清潔な場所で行うことが唯一の条件とされています。",
+  },
+  {
+    id: 7,
+    img: img7,
+    title: "Prayer Mat Dodya 礼拝用 マット",
+    price: "2,100",
+    description:
+      "Embroidery design: artistically striking appearance, brighter than in the picture. Designs are made with reference to Islamic heritage. Soft and comfortable: it is comfortable on hard ground when praying. Thanks to its softness, you can spend your time in peace. High-quality material: the high-quality velvet makes it resistant to deformation and tearing. It can be used safely for a long time. Authentic design: the shiny gold-like process inherited from ancient Turkish culture makes it extremely beautiful.",
+  },
+  {
+    id: 15,
+    img: img15,
+    title: "“Pratikser” Pocket Prayer Mat x5 礼拝マット5個",
+    price: "450",
+    discount: "500",
+    description:
+      "Easy to care, foldable paper prayer mat (pocket size). 運びやすい、コンパクト、ポケットサイズの紙礼拝マット。",
+  },
+];
+
+export const gifts = [
+  {
+    id: 5,
+    img: img5,
+    title: "Miswak With Case x5 ミスワックケース付き 5個　",
+    price: "2,300",
+    description:
+      "Natural way to care for your tooth. Easy to carry around, It is an organic product. Each piece has been handpicked for quality.　　 イスラム教的な歯ブラシ。 自然な方法で歯をケアすることができます。 持ち運びに便利な、オーガニック製品です。 一枚一枚厳選された品質です。",
+  },
+  {
+    id: 6,
+    img: img6,
+    title: "Miswak x5　ミスワーク 5個",
+    price: "1,890",
+    description:
+      "Hygienically Processed- Vacuum Packed Miswaks (single piece packing) Natural Formulation for Dental Care Miwak - Nature's Dentist 衛生的に加工・真空パックミスワック（1個包装） デンタルケアのための自然な処方  ミワク - 自然の歯医者",
+  },
+  {
+    id: 13,
+    img: img,
+    title: "Tokyo Camii Canvas Tote Bags x5",
+    price: "2,250",
+    description:
+      "(Tote Bag with Excellent Storage) Shoulder bag with gusset and excellent storage capacity. It has plenty of room to store a long wallet, a 16.9 fl oz (500 ml) plastic bottle, or a cosmetic pouch. Versatile messenger bag: This tote bag is very easy to use and can be used for commuting to work, walking around town, or as a shopping bag or storage bag. The design is simple and goes well with any outfit. Suitable for all ages. Sturdy canvas shoulder bag: This tote bag is made of canvas material. The seams are also made to be durable. The interior pocket has plenty of room for plastic bottles and tablets. (Practical Shoulder Bag) There is no extra dividers, and only one pockets inside, you can put a full amount of luggage. The opening is made with a zipper, so you can easily insert and remove your items. Canvas Tote Size: Approx. W 14.4 x D 6.3 x H 14.2 inches (36.5 x 16 x 36 cm); Weight: Approx. 15.2 oz (430 g); Color: Beige and White. デフォルトの写真をプリントと、東京ジャーミイプリントの特製トートバッグは、ギフトにも普段使いにもおすすめです。 (収納力抜群のトートバッグ）マチ付きで収納力抜群のショルダーバッグ。長財布や16.9floz（500ml）のペットボトル、コスメポーチなどを収納するのに十分なスペースが確保されています  多用途に使えるメッセンジャーバッグ 通勤や街歩き、ショッピングバッグや収納バッグとしても使える、とても使い勝手の良いトートバッグです。デザインもシンプルでどんな服装にも合います。全年齢に対応  丈夫なキャンバス地のショルダーバッグ： キャンバス素材を使用したトートバッグです。縫い目も丈夫に作られています。内ポケットにはペットボトルやタブレットを収納できるスペースが確保されています  (実用的なショルダーバッグ）余計な仕切りがなく、中にポケットが1つあるだけなので、荷物をたっぷり入れることができます。開口部はファスナー仕様なので、荷物の出し入れも簡単です  キャンバストートサイズ 約W 14.4 x D 6.3 x H 14.2 インチ（36.5 x 16 x 36 cm）、重量： 約15.2オンス（430g）、カラー：ベージュ、ホワイト",
+  },
+];

@@ -23,7 +23,7 @@ const MainCard = ({ title, img, price, discount }) => {
         </div>
       </div>
       <Button variant="secondary" className="w-full">
-        Choose option
+        Choose options
       </Button>
     </div>
   );
