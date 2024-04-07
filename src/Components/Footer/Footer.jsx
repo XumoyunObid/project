@@ -76,24 +76,22 @@ const Footer = () => {
         >
           <div className="flex items-center gap-3">
             <li className="list-none text-gray-500 text-[10px] hover:underline">
-              <Link to="/">© 2024, Tokyo Camii Gift</Link>
+              <a href="/">© 2024, Tokyo Camii Gift</a>
             </li>
             <li className=" text-gray-500 text-[10px] hover:underline">
-              <Link to="/policies/refund-policy">Refund policy</Link>
+              <a href="/policies/refund-policy">Refund policy</a>
             </li>
           </div>
           <div className="flex items-center gap-3">
             <li className=" text-gray-500 text-[10px] hover:underline">
-              <Link to="/policies/terms-of-service">Terms of service</Link>
+              <a href="/policies/terms-of-service">Terms of service</a>
             </li>
             <li className=" text-gray-500 text-[10px] hover:underline">
-              <Link to="/policies/contact-information">
-                Contact information
-              </Link>
+              <a href="/policies/contact-information">Contact information</a>
             </li>
           </div>
           <li className=" text-gray-500 text-[10px] hover:underline">
-            <Link to="/policies/legal-notice">Legal notice</Link>
+            <a href="/policies/legal-notice">Legal notice</a>
           </li>
         </div>
       </div>
