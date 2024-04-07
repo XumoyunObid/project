@@ -9,12 +9,16 @@ const Contacts = () => {
         <p className="text-gray-500 text-base">住所：東京都渋谷区大山町1-19</p>
         <p className="text-gray-500 text-base">開館時間：10:00~19:00</p>
         <p className="text-gray-500 text-base">定休日：なし</p>
-        <p className="text-gray-500 text-base">クレジットカードの有無と種類：有り</p>
+        <p className="text-gray-500 text-base">
+          クレジットカードの有無と種類：有り
+        </p>
         <p className="text-gray-500 text-base">
           言語対応レベル：日本語、トルコ語、英語、
         </p>
         <p className="text-gray-500 text-base">最寄り駅：代々木上原駅</p>
-        <p className="text-gray-500 text-base">アクセス：代々木上原駅から徒歩5分</p>
+        <p className="text-gray-500 text-base">
+          アクセス：代々木上原駅から徒歩5分
+        </p>
         <p className="text-gray-500 text-base">電話番号：03-5790-0760</p>
         <p className="text-gray-500 text-base">
           東京ジャーミー　ハラールマーケットは新文化センターの一階です。
@@ -33,25 +37,25 @@ const Contacts = () => {
           <input
             type="text"
             placeholder="Name"
-            className="border-gray-600 border-2 p-3 outline-none w-full"
+            className="border-gray-600 border-2 p-3 outline-none w-full bg-transparent"
           />
           <input
             type="email"
             placeholder="Email*"
-            className="border-gray-600 border-2 p-3 outline-none w-full"
+            className="border-gray-600 border-2 p-3 outline-none w-full bg-transparent"
           />
         </div>
         <input
           type="number"
           placeholder="Phone number"
-          className="border-gray-600 border-2 p-3 outline-none"
+          className="border-gray-600 border-2 p-3 outline-none bg-transparent"
         />
         <textarea
           name=""
           id=""
           cols="30"
           rows="3"
-          className="border-gray-600 border-2 p-3 outline-none"
+          className="border-gray-600 border-2 p-3 outline-none bg-transparent"
           placeholder="Comment"
         ></textarea>
         <Button variant="primary" className="w-[150px]">

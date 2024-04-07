@@ -6,7 +6,7 @@ const Bar = ({ show }) => {
     <>
       {show ? (
         <div
-          className={`absolute top-[120px] right-10 bottom-0 left-0 z-10 bg-white md:right-[50%]`}
+          className={`absolute top-[132px] right-10 bottom-0 left-0 z-10 bg-white md:right-[50%] border-r`}
         >
           <div className="flex flex-col items-start justify-between gap-[200px]">
             <ul className="py-8 flex flex-col">

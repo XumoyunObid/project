@@ -15,6 +15,10 @@ export default function Search({ isOpen, setIsOpen }) {
     setIsOpen(false);
   }
 
+  const handleClose = () => {
+    setIsOpen(!isOpen);
+  };
+
   function openModal() {
     setIsOpen(true);
   }
@@ -63,7 +67,7 @@ export default function Search({ isOpen, setIsOpen }) {
                     <div className="flex items-center px-10 gap-6">
                       <div className="border-2 border-gray-600 p-2 flex items-center justify-between min-w-[308px] lg:w-[740px]">
                         <input
-                          className="outline-none w-full"
+                          className="outline-none w-full bg-transparent"
                           placeholder="Search"
                           type="text"
                           value={value}
@@ -81,18 +85,20 @@ export default function Search({ isOpen, setIsOpen }) {
                           <h1 className="text-sm text-gray-500">Products</h1>
                           <ul>
                             {searchResults.map((item) => (
-                              <Link key={item.id}>
-                                <li className="flex items-center gap-3 p-2 hover:bg-gray-200">
-                                  <img
-                                    src={item.img}
-                                    alt="product"
-                                    className="w-[50px] object-contain"
-                                  />
-                                  <h2 className="text-sm hover:underline">
-                                    {item.title}
-                                  </h2>
-                                </li>
-                              </Link>
+                              <button onClick={handleClose}>
+                                <Link to={`/product/${item.id}`} key={item.id}>
+                                  <li className="flex items-center gap-3 p-2 hover:bg-gray-200">
+                                    <img
+                                      src={item.img}
+                                      alt="product"
+                                      className="w-[50px] object-contain"
+                                    />
+                                    <h2 className="text-sm hover:underline">
+                                      {item.title}
+                                    </h2>
+                                  </li>
+                                </Link>
+                              </button>
                             ))}
                           </ul>
                         </div>
