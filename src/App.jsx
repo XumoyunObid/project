@@ -13,9 +13,13 @@ import TermsOfService from "./Pages/Policies/TermsOfService";
 import ContactInformation from "./Pages/Policies/ContactInformation";
 import LegalNotice from "./Pages/Policies/LegalNotice";
 
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+
 function App() {
   return (
     <>
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />

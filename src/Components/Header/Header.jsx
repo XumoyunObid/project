@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Bar from "./Components/Bar";
-import logo from "../../../public/giftc.avif";
+import logo from "/giftc.avif";
 import Search from "./Components/Search";
 
 const Header = () => {

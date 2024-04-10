@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Button } from "../../Components/Buttons/Button";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contacts = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_gxvcbml", "template_nx9sdjv", form.current, {
+        publicKey: "OFkRB6r9Jca0fgF-c",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          toast.success("Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div className="container md:px-[80px]">
       <h1 className="text-[36px] md:text-[48px]">Contact</h1>
@@ -32,26 +55,33 @@ const Contacts = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />
-      <form className="my-6 flex flex-col gap-4">
+      <form
+        className="my-6 flex flex-col gap-4"
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <div className="flex flex-col gap-4 md:flex-row">
           <input
             type="text"
             placeholder="Name"
             className="border-gray-600 border-2 p-3 outline-none w-full bg-transparent"
+            name="user_name"
           />
           <input
             type="email"
             placeholder="Email*"
             className="border-gray-600 border-2 p-3 outline-none w-full bg-transparent"
+            name="user_email"
           />
         </div>
         <input
           type="number"
           placeholder="Phone number"
           className="border-gray-600 border-2 p-3 outline-none bg-transparent"
+          name="user_phone"
         />
         <textarea
-          name=""
+          name="message"
           id=""
           cols="30"
           rows="3"
