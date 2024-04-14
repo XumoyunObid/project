@@ -49,7 +49,7 @@ const Contacts = () => {
       </div>
       <iframe
         className="w-[350px] h-[450px] md:w-[600px]"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.3590210836323!2d139.6739785758257!3d35.66816087259139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f34759be4315%3A0xc726759ce2573887!2z0KLQvtC60LjQudGB0LrQsNGPINGB0L7QsdC-0YDQvdCw0Y8g0LzQtdGH0LXRgtGM!5e0!3m2!1sru!2s!4v1712320378065!5m2!1sru!2s"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.1285414945887!2d139.67527676498895!3d35.66803012965317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f34759be4315%3A0xc726759ce2573887!2sTokyo%20Camii%20%26%20Diyanet%20Turkish%20Culture%20Center!5e1!3m2!1sen!2s!4v1713092976638!5m2!1sen!2s"
         style={{ border: 0 }}
         allowFullScreen
         loading="lazy"

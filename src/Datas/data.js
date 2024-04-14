@@ -2,17 +2,50 @@ import img from "../assets/Images/img.webp";
 import img1 from "../assets/Images/notebook.webp";
 import img2 from "../assets/Images/kuranjapanese.webp";
 import img3 from "../assets/Images/soppi.webp";
+import soppi2 from "../assets/Images/soppi2.webp";
+import soppi3 from "../assets/Images/soppi3.webp";
 import img4 from "../assets/Images/prayingmats.webp";
+import prayingmat2 from "../assets/Images/prayingmats2.webp";
+import prayingmat3 from "../assets/Images/prayingmats3.webp";
+import prayingmat4 from "../assets/Images/prayingmats4.webp";
+import prayingmat5 from "../assets/Images/prayingmats5.webp";
 import img5 from "../assets/Images/misvakwithcase.webp";
+import miswakwithcase2 from "../assets/Images/miswakwithcase1.webp";
 import img6 from "../assets/Images/miswak.webp";
+import miswak2 from "../assets/Images/miswak2.webp";
+import miswak3 from "../assets/Images/miswak3.webp";
 import img7 from "../assets/Images/dodyamat.webp";
+import dodyamat2 from "../assets/Images/dodyamat2.webp";
+import dodyamat3 from "../assets/Images/dodyamat3.webp";
+import dodyamat4 from "../assets/Images/dodyamat4.webp";
+import dodyamat5 from "../assets/Images/dodyamat5.webp";
+import dodyamat6 from "../assets/Images/dodyamat6.webp";
+import dodyamat7 from "../assets/Images/dodyamat7.webp";
+import dodyamat8 from "../assets/Images/dodyamat8.webp";
+import dodyamat9 from "../assets/Images/dodyamat9.webp";
+import dodyamat10 from "../assets/Images/dodyamat10.webp";
+import dodyamat11 from "../assets/Images/dodyamat11.webp";
 import img8 from "../assets/Images/greenquran.webp";
+import greenquran2 from "../assets/Images/greenquran2.webp";
+import greenquran3 from "../assets/Images/greenquran3.webp";
 import img9 from "../assets/Images/redquran.webp";
+import redquran from "../assets/Images/redquran2.webp";
 import img10 from "../assets/Images/quran.webp";
+import quran2 from "../assets/Images/quran.jpg";
+import quran3 from "../assets/Images/quran1.webp";
+import quran4 from "../assets/Images/quran2.webp";
+import quran5 from "../assets/Images/quran3.webp";
+import quran6 from "../assets/Images/quran4.webp";
+import quran7 from "../assets/Images/quran5.webp";
+import quran8 from "../assets/Images/quran6.jpg";
 import img11 from "../assets/Images/takke.webp";
+import takke2 from "../assets/Images/takke2.webp";
 import img12 from "../assets/Images/tasbeh.webp";
+import tasbeh2 from "../assets/Images/tasbeh2.webp";
 import img14 from "../assets/Images/cofeepot.webp";
 import img15 from "../assets/Images/pratikser.webp";
+import pratikser2 from "../assets/Images/pratikser2.webp";
+import pratikser3 from "../assets/Images/pratikser3.webp";
 
 export const data = [
   {
@@ -42,6 +75,7 @@ export const data = [
     discount: "2,250",
     description:
       "Care Instructions: Machine Wash Fit Type: Regular Made in Turkey: These Muslim prayer caps are made from the finest Turkish cotton, known for its high quality and durability. Comfortable Fit: The lightweight, breathable fabric of these skull caps ensures a comfortable fit during prayer or daily wear. Traditional Style: These taqiyah caps feature a classic design that has been worn by Muslims for centuries. Knitted Pattern: The intricate knitting pattern of these topi caps adds a stylish touch to your prayer attire. Versatile: These Turkish caps can be worn for daily prayers, religious events, or even as a fashion accessory. Durable Material: The high-quality cotton material is designed to last, providing you with long-lasting use and durability. Easy to Clean: These prayer caps can be easily cleaned in the washing machine, making them convenient to maintain. Perfect Gift: These Islamic prayer caps make a thoughtful gift for any Muslim friend or family member.",
+    details: [{ img: soppi2 }, { img: soppi3 }],
   },
   {
     id: 4,
@@ -51,6 +85,12 @@ export const data = [
     discount: "19,500",
     description:
       "Muslims are often seen kneeling and prostrating on small embroidered rugs, called prayer rugs. For those unfamiliar with the use of these rugs, they may look like small oriental carpets, or simply nice pieces of embroidery. During Islamic prayers, worshippers bow, kneel and prostrate on the ground in humility before God. The only requirement in Islam is that prayers be performed in an area that is clean. Plush Lux PraPlush Lux Prayer Mats, Turkish Luxury Prayer Rug. イスラム教徒は、祈りの敷物 と呼ばれる刺繍入りの小さな敷物の上で、膝をついたり、ひれ伏したりする姿をよく目にします。この敷物の使い方を知らない人にとっては、小さな「オリエンタルカーペット」のように見えるかもしれませんし、単に素敵な刺繍の作品に見えるかもしれません。イスラム教の礼拝では、礼拝者は神の前に謙虚に頭を下げたり、ひざまずいたり、地面にひれ伏したりします。イスラム教では、礼拝は清潔な場所で行うことが唯一の条件とされています。",
+    details: [
+      { img: prayingmat2 },
+      { img: prayingmat3 },
+      { img: prayingmat4 },
+      { img: prayingmat5 },
+    ],
   },
   {
     id: 5,
@@ -59,6 +99,7 @@ export const data = [
     price: "2,300",
     description:
       "Natural way to care for your tooth. Easy to carry around, It is an organic product. Each piece has been handpicked for quality.　　 イスラム教的な歯ブラシ。 自然な方法で歯をケアすることができます。 持ち運びに便利な、オーガニック製品です。 一枚一枚厳選された品質です。",
+    details: [{ img: miswakwithcase2 }],
   },
   {
     id: 6,
@@ -67,6 +108,7 @@ export const data = [
     price: "1,890",
     description:
       "Hygienically Processed- Vacuum Packed Miswaks (single piece packing) Natural Formulation for Dental Care Miwak - Nature's Dentist 衛生的に加工・真空パックミスワック（1個包装） デンタルケアのための自然な処方  ミワク - 自然の歯医者",
+    details: [{ img: miswak2 }, { img: miswak3 }],
   },
   {
     id: 7,
@@ -75,6 +117,18 @@ export const data = [
     price: "2,100",
     description:
       "Embroidery design: artistically striking appearance, brighter than in the picture. Designs are made with reference to Islamic heritage. Soft and comfortable: it is comfortable on hard ground when praying. Thanks to its softness, you can spend your time in peace. High-quality material: the high-quality velvet makes it resistant to deformation and tearing. It can be used safely for a long time. Authentic design: the shiny gold-like process inherited from ancient Turkish culture makes it extremely beautiful.",
+    details: [
+      { img: dodyamat2 },
+      { img: dodyamat3 },
+      { img: dodyamat4 },
+      { img: dodyamat5 },
+      { img: dodyamat6 },
+      { img: dodyamat7 },
+      { img: dodyamat8 },
+      { img: dodyamat9 },
+      { img: dodyamat10 },
+      { img: dodyamat11 },
+    ],
   },
   {
     id: 8,
@@ -83,6 +137,7 @@ export const data = [
     price: "2,400",
     description:
       " Medium Size Quran Kareem Thermo Leather Cover. 中型コーラン カリームサーモレザーカバー ",
+    details: [{ img: greenquran2 }, { img: greenquran3 }],
   },
   {
     id: 9,
@@ -92,6 +147,7 @@ export const data = [
     discount: "3,950",
     description:
       "The actual colors and patterns may differ from those shown in the photos. Thank you for your understandings in advance. For bulk buying, please contact the following address. tchalalmarket@gmail.com 実物の色や柄は写真と異なる場合があります。予めご了承下さい。多量注文をご希望の場合は以下のメールアドレスにご連絡下さい。 tchalalmarket@gmail.com",
+    details: [{ img: redquran }],
   },
   {
     id: 10,
@@ -100,6 +156,15 @@ export const data = [
     price: "3,950",
     description:
       "The actual colors and patterns may differ from those shown in the photos. Thank you for your understandings in advance. For bulk buying, please contact the following address. tchalalmarket@gmail.com  実物の色や柄は写真と異なる場合があります。予めご了承下さい。多量注文をご希望の場合は以下のメールアドレスにご連絡下さい。 tchalalmarket@gmail.com ",
+    details: [
+      { img: quran2 },
+      { img: quran3 },
+      { img: quran4 },
+      { img: quran5 },
+      { img: quran6 },
+      { img: quran7 },
+      { img: quran8 },
+    ],
   },
   {
     id: 11,
@@ -108,6 +173,7 @@ export const data = [
     price: "1,700",
     description:
       "Molded Prayer Cap Perforated Model. It is a perforated model prayer cap. It has air holes on it. Hard Mold is a skullcap. It is a cap that can be twisted and put in a pocket. It is made of hard fabric. 成型祈祷帽 穴あきモデル  穴あきモデルのお祈り帽です。空気穴があります。ハードモールドはスカルキャップです。ねじってポケットに入れられるキャップです。 硬い生地でできています。",
+    details: [{ img: takke2 }],
   },
   {
     id: 12,
@@ -116,6 +182,7 @@ export const data = [
     price: "1,250",
     description:
       "Muslim Tasbih 99 Beads Islam Prayer Dhikr. Scented. Bead size: 8 mm. (approx). Good for praying Zikr, Namaz ceremony for Muslims. May use for car rear mirror hanging decorative ornament, too. Good quality product. Muslim gifts for Ramadan, Eid, birthdays, Father's Day, or other good occasions. ムスリム タスビーフ 99 ビーズ イスラム教の祈りディクル 香り付き ビーズサイズ: 8mm。 (約) イスラム教徒のためのナマズ儀式であるジクルを祈るのに適しています。 車のバックミラーの吊り下げ装飾オーナメントにも使用できます。 良質の製品。 ラマダン、イード、誕生日、父の日、またはその他の機会のためのイスラム教徒の贈り物。",
+    details: [{ img: tasbeh2 }],
   },
   {
     id: 13,
@@ -141,6 +208,7 @@ export const data = [
     discount: "500",
     description:
       "Easy to care, foldable paper prayer mat (pocket size). 運びやすい、コンパクト、ポケットサイズの紙礼拝マット。",
+    details: [{ img: pratikser2 }, { img: pratikser3 }],
   },
 ];
 
