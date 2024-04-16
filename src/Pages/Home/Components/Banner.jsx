@@ -2,6 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import { Button } from "../../../Components/Buttons/Button";
 import { useNavigate } from "react-router-dom";
+import prayermat from "../../../assets/Images/mat.png";
+import qurans from "../../../assets/Images/qurans.png";
+import gifts from "../../../assets/Images/authentic.jpg";
 const Banner = () => {
   const navigate = useNavigate();
   const settings = {
@@ -34,7 +37,7 @@ const Banner = () => {
         <div className="w-full relative">
           <img
             className="w-full object-cover h-[280px] md:h-[465px]"
-            src="https://gift.tokyocamii.org/cdn/shop/files/Quran_3.png?v=1682488010&width=2400"
+            src={qurans}
             alt=""
           />
           <div className="absolute bg-transparent flex flex-col items-center justify-center gap-4 z-10 top-[30%] left-[25%] md:left-[30%] md:top-[35%] lg:left-[40%]">
@@ -54,7 +57,7 @@ const Banner = () => {
         <div className="w-full relative">
           <img
             className="w-full object-cover h-[280px] md:h-[465px]"
-            src="https://gift.tokyocamii.org/cdn/shop/files/mat_1.png?v=1682487890&width=2400"
+            src={prayermat}
             alt=""
           />
           <div className="absolute bg-transparent flex flex-col items-center justify-center gap-4 z-10 top-[30%] left-[25%] md:left-[35%] md:bg-[#121212] md:py-[50px] md:px-[100px] md:top-[25%] lg:left-[55%]">
@@ -72,7 +75,7 @@ const Banner = () => {
         <div className="w-full relative">
           <img
             className="w-full object-cover h-[280px] md:h-[465px]"
-            src="https://gift.tokyocamii.org/cdn/shop/files/linus-mimietz-K61u4iVjC58-unsplash_1.jpg?v=1680059012&width=2400"
+            src={gifts}
             alt=""
           />
           <div className="absolute bg-transparent flex flex-col items-center justify-center gap-4 z-10 top-[30%] left-[25%] md:left-[15%] md:top-[35%]">
